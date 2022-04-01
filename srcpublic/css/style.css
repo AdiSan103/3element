@@ -7,6 +7,7 @@
   --color4 : #B8FFF9;
   --color5 :  #fff;
   --color6 : #6D6969;
+  --color7 : #ffb050;
 
 }
 .color--1 {
@@ -31,6 +32,10 @@
 
 .color--6 {
   color: var(--color6);
+}
+
+.color--7 {
+  color: var(--color7);
 }
 
 .button--1 {
@@ -59,6 +64,51 @@
   border: 2px solid rgb(197, 196, 196);
 }
 
+/* font */
+
+.font__size--1 {
+  font-size: 3rem;
+}
+.font__size--2 {
+  font-size: 1.2rem;
+}
+.font__size--3 {
+  font-size: 1.1rem;
+}
+.font__size--4 {
+  font-size: 2rem;
+}
+
+@media(min-width:576px) {
+  .font__size--1 {
+    font-size: 3.5rem;
+  }
+  .font__size--2 {
+    font-size: 1.4rem;
+  }
+  .font__size--3 {
+    font-size: 1.2rem;
+  }
+  .font__size--4 {
+    font-size: 2.5rem;
+  }
+}
+@media(min-width:765px) {
+  .font__size--1 {
+    font-size: 4rem;
+  }
+  .font__size--2 {
+    font-size: 1.5rem;
+  }
+  .font__size--3 {
+    font-size: 1.3rem;
+  }
+  .font__size--4 {
+    font-size: 3rem;
+  }
+}
+
+
 /* body */
 body {
   overflow-x: hidden;
@@ -74,8 +124,8 @@ nav {
   padding: 20px;
 }
 .nav__up {
-  background-color: white;
-  box-shadow: 0 0 16px 2px #24dabb5e;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 16px 8px #24dabc11;
 }
 
 .nav__links {
@@ -294,6 +344,7 @@ nav {
   background-image: url('../img/img.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover ;
   margin: 100px 0;
   height: 400px;
@@ -312,7 +363,7 @@ nav {
 
 /* service*/
 .service {
-  margin: 100px 0;
+  margin: 100px 20px;
 }
 .service__card {
   text-align: center;
@@ -326,8 +377,21 @@ nav {
 .service__h6 {
   font-weight: bold;
   margin: 20px 0;
+  color: var(--color3);
 }
-
+.service__main {
+  gap: 40px;
+}
+.service__card {
+  transition: 0.2s;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.service__card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 16px 2px #0cadda3b;
+}
 /* testimoni */
 .testimoni {
   margin: 100px 0;
@@ -350,6 +414,7 @@ nav {
   box-shadow: 0 0 20px 1px rgba(30, 139, 202, 0.616);
   background-color: white;
   padding: 10px;
+  height: 380px;
 }
 .testimoni__p {
   margin-left: 20px;
@@ -368,9 +433,14 @@ nav {
 }
 .contactus__form {
   background-color: white;
-  padding: 20px 30px;
+  padding: 20px;
   border-radius: 20px;
   min-width: 400px;
+}
+@media (max-width:500px) {
+  .contactus__form {
+    min-width: 250px;
+  }
 }
 .contactus__p {
   color: var(--color5);
@@ -416,4 +486,26 @@ footer {
 .footer__svg--mediasocial {
   width: 30px;
   margin: 0 10px;
+}
+
+/* animation */
+.gradient-1 {
+  background-size: 400%;
+  background-image: linear-gradient(45deg, #0CADDA, #1AEBB1, #f98a30, #1ab3eb);
+  transition: background-position 1s;
+  animation: gradient 40s infinite;
+  background-position: left;
+}
+@keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  
+  50% { 
+    background-position: right;
+  }
+
+  100% {
+    background-position: left;
+  }
 }

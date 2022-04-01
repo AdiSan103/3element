@@ -1,8 +1,5 @@
 var swiper = new Swiper(".banner", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    effect: "fade",
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -19,15 +16,11 @@ var swiper = new Swiper(".content3__slider", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
   },
-  });
+});
 
   var swiper = new Swiper(".gallery__main", {
     slidesPerView: 2,
@@ -39,18 +32,14 @@ var swiper = new Swiper(".content3__slider", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
   },
-  });
+});
 
 
-  var swiper = new Swiper(".testimoni__main", {
+var swiper = new Swiper(".testimoni__main", {
     effect: "cards",
     grabCursor: true,
     loop: true,
@@ -66,7 +55,7 @@ var swiper = new Swiper(".content3__slider", {
       delay: 3000,
       disableOnInteraction: false,
   },
-  });
+});
 
   // hamburger-menu
 function hamburgerMenu() {
