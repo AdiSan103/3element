@@ -7,62 +7,37 @@ var swiper = new Swiper(".banner", {
 });
 
 var swiper = new Swiper(".content3__slider", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-  },
-});
-
-  var swiper = new Swiper(".gallery__main", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-  },
-});
-
-
-var swiper = new Swiper(".testimoni__main", {
-    effect: "cards",
+    effect: "coverflow",
     grabCursor: true,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
     },
     autoplay: {
-      delay: 3000,
+      delay: 2500,
       disableOnInteraction: false,
-  },
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    }
 });
 
   // hamburger-menu
 function hamburgerMenu() {
-  if (document.querySelector('.nav__main').classList.contains('d-none')) {
-      document.querySelector('.nav__main').classList.remove('d-none');
+  if (document.querySelector('.nav__main').classList.contains('d-hidden')) {
+      document.querySelector('.nav__main').classList.remove('d-hidden');
   } else {
-      document.querySelector('.nav__main').classList.add('d-none');
+      document.querySelector('.nav__main').classList.add('d-hidden');
   }
 }
 
@@ -71,6 +46,8 @@ window.addEventListener("scroll", () => {
   let thisScroll = this.scrollY;
   if(thisScroll > document.getElementsByClassName('nav__start')[0].offsetTop) {
       document.getElementsByClassName('nav__main')[0].classList.add("nav__up");
+  } else {
+    document.getElementsByClassName('nav__main')[0].classList.remove("nav__up");
   }
 });
 
