@@ -1,5 +1,8 @@
 /* use bootstrap just display flex and grid */
 /* color */
+* {
+  font-family: 'Jost', sans-serif;
+}
 html {
   scroll-behavior: smooth;
 }

@@ -18,10 +18,10 @@ var swiper = new Swiper(".content3__slider", {
       modifier: 1,
       slideShadows: true,
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
         slidesPerView: 2,
