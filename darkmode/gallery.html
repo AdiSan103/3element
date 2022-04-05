@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- aos js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font -->
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Jost -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="./srcpublic/css/index.css">
+
+    <title>3 Element</title>
+
+</head>
+
+<body class="bg-black">
+    <!-- nav -->
+    <nav>
+        <div class="nav__hamburgermenu d-block d-md-none" onclick="hamburgerMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="nav__hamburgermenu--svg">
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+            </svg>
+        </div>
+        <div class="nav__main d-hidden d-md-flex  ">
+            <div
+                class="d-md-flex justify-content-between flex-column flex-md-row  font__size--3 container align-items-center">
+                <div class=" nav__logo">
+                </div>
+                <ul class="nav__links d-flex flex-column flex-md-row">
+                    <li class="nav__link"><a href="#" class="nav__link--a">Our Company</a></li>
+                    <li class="nav__link"><a href="index.html#ourService" class="nav__link--a">Our Service</a></li>
+                    <li class="nav__link"><a href="index.html#gallery" class="nav__link--a">Gallery</a></li>
+                    <li class="nav__link"><a href="index.html#ourClient" class="nav__link--a">Our Client</a></li>
+                    <li class="nav__link"><a href="index.html#reachUs" class="nav__link--a">Reach Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner__slide" style="background-image: url('./srcpublic/img/img.jpg');">
+            <div class="banner__descBack d-flex flex-column justify-content-center align-items-center">
+                <h1 class="banner__h1 color--1  font__size--1" data-aos="fade-up">Galleries</h1>
+                <p class="banner__p color--5 font__size--2" data-aos="fade-up" data-aos-delay="300">It is a
+                    duly
+                    registered company under the Motivate Group with full accreditation with the Ghana Tourism
+                    Authority to operate as a tour provider.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- galleries -->
+    <div class="nav__start">
+        <div class="galleries row row-cols-1 row-cols-md-3 row-cols-lg-4 align-items-center justify-content-center">
+            <div class="col gallery__card" data-aos="zoom-out">
+                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
+                <div>
+                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
+                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloribus,
+                        quasi!</p>
+                </div>
+            </div>
+            <div class="col gallery__card" data-aos="zoom-out">
+                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
+                <div>
+                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
+                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloribus,
+                        quasi!</p>
+                </div>
+            </div>
+            <div class="col gallery__card" data-aos="zoom-out">
+                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
+                <div>
+                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
+                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloribus,
+                        quasi!</p>
+                </div>
+            </div>
+            <div class="col gallery__card" data-aos="zoom-out">
+                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
+                <div>
+                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
+                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloribus,
+                        quasi!</p>
+                </div>
+            </div>
+            <div class="col gallery__card" data-aos="zoom-out">
+                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
+                <div>
+                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
+                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloribus,
+                        quasi!</p>
+                </div>
+            </div>
+            <div class="col gallery__card" data-aos="zoom-out">
+                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
+                <div>
+                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
+                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloribus,
+                        quasi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="d-flex align-items-center flex-column">
+        <h6 class="">3ELEMENTS</h6>
+        <ul class="d-flex justify-content-center">
+            <li class="footer__nav">
+                <a href="#" class="footer__link">Our Company</a>
+            </li>
+            <li class="footer__nav">
+                <a href="index.html#ourSecrvice" class="footer__link">Our Service</a>
+            </li>
+            <li class="footer__nav">
+                <a href="index.html#gallery" class="footer__link">Gallery</a>
+            </li>
+            <li class="footer__nav">
+                <a href="index.html#ourClient" class="footer__link">Our Client</a>
+            </li>
+            <li class="footer__nav">
+                <a href="index.html#reachUs" class="footer__link">Reach Us</a>
+            </li>
+        </ul>
+        <div class="d-flex ">
+            <a href="#" class="footer__svg--mediasocial" target="__blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.79 21.79">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fdffff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path class="cls-1"
+                                d="M18.53,3.17A10.69,10.69,0,0,0,10.89,0,10.81,10.81,0,0,0,1.53,16.2L0,21.79l5.73-1.5a10.75,10.75,0,0,0,5.16,1.31h0a10.9,10.9,0,0,0,10.9-10.8A10.82,10.82,0,0,0,18.53,3.17ZM10.89,19.78a9,9,0,0,1-4.57-1.25L6,18.34l-3.39.89.9-3.31-.21-.34A9,9,0,1,1,20,10.8,9.07,9.07,0,0,1,10.89,19.78Zm4.92-6.72c-.26-.13-1.59-.79-1.84-.87s-.43-.14-.61.13-.69.88-.85,1.06-.32.21-.59.07a7.39,7.39,0,0,1-3.67-3.21C8,9.76,8.53,9.8,9,8.77a.51.51,0,0,0,0-.48c-.07-.13-.61-1.46-.83-2s-.45-.45-.61-.46H7.06a1,1,0,0,0-.72.33A3.1,3.1,0,0,0,5.4,8.41,5.32,5.32,0,0,0,6.5,11.2a12.06,12.06,0,0,0,4.61,4.07,5.26,5.26,0,0,0,3.24.68,2.77,2.77,0,0,0,1.82-1.28,2.42,2.42,0,0,0,.16-1.29C16.26,13.26,16.08,13.19,15.81,13.06Z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="footer__svg--mediasocial" target="__blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.55 17.66">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path class="cls-1"
+                                d="M23.1,5.83a.28.28,0,0,1,.45.22v9.41a2.21,2.21,0,0,1-2.21,2.2H2.21A2.21,2.21,0,0,1,0,15.46V6.05a.27.27,0,0,1,.45-.21c1,.8,2.39,1.81,7.08,5.22,1,.71,2.61,2.2,4.25,2.19s3.31-1.51,4.24-2.19C20.71,7.65,22.07,6.63,23.1,5.83ZM11.78,11.78c1.06,0,2.6-1.35,3.37-1.91,6.11-4.43,6.57-4.81,8-5.92a1.12,1.12,0,0,0,.42-.87V2.21A2.21,2.21,0,0,0,21.34,0H2.21A2.21,2.21,0,0,0,0,2.21v.87A1.12,1.12,0,0,0,.42,4c1.41,1.1,1.88,1.49,8,5.92.77.56,2.31,1.92,3.38,1.91Z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="footer__svg--mediasocial" target="__blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.62 17.62">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path class="cls-1"
+                                d="M15.73,0H1.89A1.89,1.89,0,0,0,0,1.89V15.73a1.89,1.89,0,0,0,1.89,1.89h5.4v-6H4.81V8.81H7.29V6.66A3.44,3.44,0,0,1,11,2.87a14.91,14.91,0,0,1,2.18.19v2.4H11.92A1.41,1.41,0,0,0,10.33,7V8.81H13l-.43,2.82H10.33v6h5.4a1.89,1.89,0,0,0,1.89-1.89V1.89A1.89,1.89,0,0,0,15.73,0Z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="footer__svg--mediasocial" target="__blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.12 17.12">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path class="cls-1"
+                                d="M8.56,4.17A4.39,4.39,0,1,0,13,8.56,4.38,4.38,0,0,0,8.56,4.17Zm0,7.24a2.85,2.85,0,1,1,2.86-2.85,2.86,2.86,0,0,1-2.86,2.85ZM14.16,4a1,1,0,1,1-1-1A1,1,0,0,1,14.16,4Zm2.9,1a5,5,0,0,0-1.38-3.59A5.1,5.1,0,0,0,12.09.06C10.68,0,6.44,0,5,.06A5.13,5.13,0,0,0,1.44,1.44,5.11,5.11,0,0,0,.06,5C0,6.44,0,10.68.06,12.09a5.11,5.11,0,0,0,1.38,3.59A5.13,5.13,0,0,0,5,17.06c1.41.08,5.65.08,7.06,0a5.05,5.05,0,0,0,3.59-1.38,5.07,5.07,0,0,0,1.38-3.59c.08-1.41.08-5.65,0-7.06Zm-1.82,8.58a2.89,2.89,0,0,1-1.63,1.62c-1.13.45-3.8.35-5,.35s-3.92.1-5-.35a2.86,2.86,0,0,1-1.63-1.62c-.45-1.13-.34-3.8-.34-5s-.1-3.92.34-5.05A2.86,2.86,0,0,1,3.52,1.89c1.12-.45,3.8-.35,5-.35s3.93-.1,5,.35a2.86,2.86,0,0,1,1.63,1.62c.45,1.13.34,3.8.34,5.05S15.69,12.48,15.24,13.61Z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="footer__svg--mediasocial" target="__blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.36 16.54">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path class="cls-1"
+                                d="M18.27,4.12c0,.18,0,.36,0,.54A11.8,11.8,0,0,1,6.41,16.54,11.86,11.86,0,0,1,0,14.67c.34,0,.66.05,1,.05a8.32,8.32,0,0,0,5.18-1.79A4.16,4.16,0,0,1,2.29,10a5.06,5.06,0,0,0,.79.06A4.4,4.4,0,0,0,4.17,10,4.16,4.16,0,0,1,.83,5.87V5.81a4.1,4.1,0,0,0,1.88.53A4.17,4.17,0,0,1,1.42.76,11.88,11.88,0,0,0,10,5.13a4.35,4.35,0,0,1-.11-1,4.18,4.18,0,0,1,7.23-2.85,8.27,8.27,0,0,0,2.65-1A4.16,4.16,0,0,1,18,2.61,8.12,8.12,0,0,0,20.36,2a8.58,8.58,0,0,1-2.09,2.16Z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" class="footer__svg--mediasocial" target="__blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.8 13.92">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path class="cls-1"
+                                d="M19.38,2.18A2.47,2.47,0,0,0,17.63.42C16.09,0,9.9,0,9.9,0S3.71,0,2.16.42A2.49,2.49,0,0,0,.41,2.18,26.25,26.25,0,0,0,0,7a26.34,26.34,0,0,0,.41,4.8A2.45,2.45,0,0,0,2.16,13.5c1.55.42,7.74.42,7.74.42s6.19,0,7.73-.42a2.43,2.43,0,0,0,1.75-1.73A25.72,25.72,0,0,0,19.8,7,25.64,25.64,0,0,0,19.38,2.18ZM7.87,9.92V4L13.05,7l-5.18,3Z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <p class="d-flex ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.59 30.12" class="footer__svg--1">
+                <defs>
+                    <style>
+                        .cls-1-2 {
+                            fill: #fff;
+                        }
+                    </style>
+                </defs>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1-2"
+                            d="M10.13,29.51C1.59,17.12,0,15.85,0,11.29a11.3,11.3,0,0,1,22.59,0c0,4.56-1.59,5.83-10.13,18.22a1.42,1.42,0,0,1-2.33,0ZM11.29,16a4.71,4.71,0,1,0-4.7-4.71A4.71,4.71,0,0,0,11.29,16Z" />
+                    </g>
+                </g>
+            </svg>
+            Location of Desa, Kab, Prov
+        </p>
+        <p class="">copyright company | all rights resserveed.</p>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- my js -->
+    <script src="./srcpublic/js/script.js"></script>
+</body>
+
+</html>
