@@ -214,9 +214,8 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
-  height: 60px;
-  width: 60px;
+  height:100px;
+  width: 100px;
   margin: 0 20px;
 }
 
@@ -250,6 +249,19 @@ nav {
 }
 .nav__hamburgermenu--svg {
   fill: var(--color3);
+}
+.nav__logo__2 {
+  background-image: url('../img/logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:80px;
+  width: 80px;
+  margin: 0 20px;
+  z-index: 9;
+  right: 0;
+  position: fixed;
+  top:10px;
 }
 
 
