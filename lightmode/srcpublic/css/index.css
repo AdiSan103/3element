@@ -1,5 +1,17 @@
 /* use bootstrap just display flex and grid */
 /* color */
+body,
+nav,
+.content1,
+.contetn2,
+.content3,
+.content4,
+.content5,
+.banner,
+.contactus,
+footer {
+  overflow-x: hidden;
+}
 * {
   font-family: 'Jost', sans-serif;
 }
