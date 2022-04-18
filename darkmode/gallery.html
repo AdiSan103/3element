@@ -25,6 +25,17 @@
 </head>
 
 <body class="bg-black">
+    <!-- popUp -->
+    <div class="popup--hidden popUp d-flex justify-content-center align-items-center">
+        <div class="exitPopUp" onclick="exitPopup()">
+            <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z" />
+            </svg>
+        </div>
+        <img src="" alt="">
+    </div>
     <!-- nav -->
     <nav>
         <div class="nav__hamburgermenu d-block d-md-none" onclick="hamburgerMenu()">
@@ -34,7 +45,7 @@
                     d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
             </svg>
         </div>
-        <div class="nav__main d-hidden d-md-flex  ">
+        <div class="nav__main d-hidden d-lg-flex">
             <div
                 class="d-md-flex justify-content-between flex-column flex-md-row  font__size--3 container align-items-center">
                 <div class=" nav__logo">
@@ -67,52 +78,9 @@
     <div class="nav__start">
         <div class="galleries row row-cols-1 row-cols-md-3 row-cols-lg-4 align-items-center justify-content-center">
             <div class="col gallery__card" data-aos="zoom-out">
-                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
-                <div>
-                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
-                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Doloribus,
-                        quasi!</p>
+                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"
+                    data-img="srcpublic/img/img.jpg" onclick="popUp(this)">
                 </div>
-            </div>
-            <div class="col gallery__card" data-aos="zoom-out">
-                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
-                <div>
-                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
-                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Doloribus,
-                        quasi!</p>
-                </div>
-            </div>
-            <div class="col gallery__card" data-aos="zoom-out">
-                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
-                <div>
-                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
-                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Doloribus,
-                        quasi!</p>
-                </div>
-            </div>
-            <div class="col gallery__card" data-aos="zoom-out">
-                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
-                <div>
-                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
-                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Doloribus,
-                        quasi!</p>
-                </div>
-            </div>
-            <div class="col gallery__card" data-aos="zoom-out">
-                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
-                <div>
-                    <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
-                    <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Doloribus,
-                        quasi!</p>
-                </div>
-            </div>
-            <div class="col gallery__card" data-aos="zoom-out">
-                <div class="gallery__card__img" style="background-image: url('srcpublic/img/img.jpg');"></div>
                 <div>
                     <h6 class="gallery__card__h6  font__size--2">Hot News2!</h6>
                     <p class="gallery__card__p ">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
