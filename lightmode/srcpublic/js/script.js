@@ -53,3 +53,12 @@ window.addEventListener("scroll", () => {
 
 // aos js
 AOS.init();
+
+// popup img
+function popUp(data) {
+  document.querySelector('.popUp').classList.remove('popup--hidden');
+  document.querySelector('.popUp img').src = data.getAttribute("data-img");
+}
+function exitPopup(data) {
+  document.querySelector('.popUp').classList.add('popup--hidden');
+}
