@@ -13,7 +13,7 @@ footer {
   overflow-x: hidden;
 }
 * {
-  font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
   color: var(--color8);
 }
 html {
@@ -29,7 +29,8 @@ html {
   --color6 : #d8d7d7;
   --color7 : #ffb050;
   --color8: #fff;
-  --bg1 : black,rgba(255, 255, 255, 0.121);
+  /* --bg1 : rgb(30, 29, 29),rgba(255, 255, 255, 0.549); */
+  --bg1 : rgb(2, 20, 48), rgb(3, 32, 79);
 }
 .color--1 {
   color: var(--color1);
